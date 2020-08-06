@@ -7,8 +7,8 @@ import { RouterModule } from '@angular/router';
 import { ApiService } from './services/api/api.service';
 import { AuthService } from './services/auth/auth.service';
 import { BaseApiService } from './services/base-api/base-api.service';
-import { TokenInterceptor } from './services/interceptors/token-interceptor.service';
-import { AuthenticatedUserGuard } from './guards/authenticated-user.guard';
+import { AuthenticatedUserGuard } from './guards/authenticated-user-guard/authenticated-user.guard';
+import { TokenInterceptor } from './interceptors/token-interceptor/token-interceptor.service';
 
 
 @NgModule({

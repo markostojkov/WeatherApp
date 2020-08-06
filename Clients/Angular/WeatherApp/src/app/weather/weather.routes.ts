@@ -1,7 +1,7 @@
 import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 import { WeatherForecastComponent } from './components/weather-forecast/weather-forecast.component';
-import { AuthenticatedUserGuard } from '../shared/guards/authenticated-user.guard';
+import { AuthenticatedUserGuard } from '../shared/guards/authenticated-user-guard/authenticated-user.guard';
 
 export const routes: Routes = [
     {
