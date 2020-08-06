@@ -9,7 +9,12 @@ import { ErrorCodeMessage } from '../../errors/error.codes';
 
 @Injectable()
 export class TokenInterceptor implements HttpInterceptor {
-  constructor(private auth: AuthService, private router: Router, private toastr: ToastrService) {}
+
+  constructor(
+    private auth: AuthService,
+    private router: Router,
+    private toastr: ToastrService) {}
+
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     request = request.clone({
       setHeaders: {
