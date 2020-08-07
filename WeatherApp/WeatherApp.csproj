@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Core\WeatherApp.Contracts\WeatherApp.Contracts.csproj" />
+    <ProjectReference Include="..\Core\WeatherApp.Domain\WeatherApp.Domain.csproj" />
     <ProjectReference Include="..\Core\WeatherApp.Persistence\WeatherApp.Persistence.csproj" />
     <ProjectReference Include="..\WeatherApp.Contracts\WeatherApp.Contracts.csproj" />
     <ProjectReference Include="..\WeatherApp.Persistence\WeatherApp.Persistence.csproj" />

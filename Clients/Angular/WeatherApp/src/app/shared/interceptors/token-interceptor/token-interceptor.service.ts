@@ -26,12 +26,8 @@ export class TokenInterceptor implements HttpInterceptor {
       if (err.status === 401) {
         this.router.navigateByUrl('/users/login');
       }
-      if (Array.isArray(err.error)) {
-        err.error.forEach(e => this.toastr.error(e.description));
-      } else {
-        const errorMessage = new ErrorCodeMessage().getErrorMessage(err.error);
-        this.toastr.error(errorMessage);
-      }
+      const errorMessage = new ErrorCodeMessage().getErrorMessage(err.error);
+      this.toastr.error(errorMessage);
       return throwError(err);
     }));
   }

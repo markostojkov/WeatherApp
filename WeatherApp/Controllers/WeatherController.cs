@@ -1,47 +1,30 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using System;
-using System.Globalization;
-using System.Net.Http;
-using System.Text.Json;
 using System.Threading.Tasks;
-using WeatherApp.Contracts.AppSettings;
-using WeatherApp.Contracts.Result;
+using WeatherApp.Contracts.Utils.Result;
 using WeatherApp.Contracts.Weather;
+using WeatherApp.Contracts.Weather.Dto;
 
 namespace WeatherApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class WeatherController : ControllerBase
+    public class WeatherController : BaseController
     {
-        public WeatherController(IAppSettings appSettings)
+        public WeatherController(IWeatherService weatherService)
         {
-            AppSettings = appSettings;
+            WeatherService = weatherService;
         }
 
-        public IAppSettings AppSettings { get; }
+        public IWeatherService WeatherService { get; }
 
         [Authorize]
         [HttpGet("{city}")]
         public async Task<IActionResult> GetCityWeather([FromRoute]string city)
         {
-            using (HttpClient client = new HttpClient())
-            {
-                var url = string.Format(CultureInfo.InvariantCulture, AppSettings.AppOpenWeatherAPIRoute.ToString(), city, AppSettings.AppOpenWeatherAPISecretKey);
-                HttpResponseMessage responseTask = await client.GetAsync(url);
+            Result<WeatherDto> result = await WeatherService.GetCityWeather(city);
 
-                if (!responseTask.IsSuccessStatusCode)
-                {
-                    return NotFound(ResultErrorCodes.WeatherForecastNotFound);
-                }
-
-                var json = responseTask.Content.ReadAsStringAsync().Result;
-                WeatherDto weatherDto = JsonConvert.DeserializeObject<WeatherDto>(json);
-
-                return Ok(weatherDto);
-            }
+            return OkOrError(result);
         }
     }
 }

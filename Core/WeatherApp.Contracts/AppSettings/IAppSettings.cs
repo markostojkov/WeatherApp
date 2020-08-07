@@ -11,5 +11,11 @@ namespace WeatherApp.Contracts.AppSettings
         public int AppGetTokenExpirationInHours { get; }
 
         public string AppDefaultClientUrl { get; }
+
+        public string AppJwtValidAudience { get; }
+
+        public string AppJwtSecret { get; }
+
+        public string AppJwtValidIssuer { get; }
     }
 }

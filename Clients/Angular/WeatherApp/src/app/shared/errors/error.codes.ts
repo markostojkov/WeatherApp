@@ -23,6 +23,14 @@ export const ERROR_CODES: ErrorCodes[] = [
     },
     {
         code: 'USER_ALREADY_EXISTS',
-        message: 'User already exists'
+        message: 'User already exists!'
+    },
+    {
+        code: 'USER_DOES_NOT_EXIST',
+        message: 'User could not be found!'
+    },
+    {
+        code: 'USER_INCORRECT_PASSWORD',
+        message: 'You have entered incorrect password!'
     }
 ];

@@ -20,5 +20,11 @@ namespace WeatherApp.Services
         public int AppGetTokenExpirationInHours => Configuration.GetValue<int>("App:TokenExpirationInHours");
 
         public string AppDefaultClientUrl => Configuration.GetValue<string>("App:DefaultClientUrl");
+
+        public string AppJwtValidAudience => Configuration.GetValue<string>("JWT:ValidAudience");
+
+        public string AppJwtSecret => Configuration.GetValue<string>("JWT:Secret");
+
+        public string AppJwtValidIssuer => Configuration.GetValue<string>("JWT:ValidIssuer");
     }
 }

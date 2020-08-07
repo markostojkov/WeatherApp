@@ -55,11 +55,12 @@ export class AuthService extends BaseApiService {
   }
 
   public isAuthenticated(): boolean {
-    const expirationDate = localStorage.getItem('expiration');
-    if (this.getToken() && expirationDate && Date.parse(expirationDate) > Date.now()) {
-      return true;
+    if (!this.getToken()) {
+      return false;
     }
-    return false;
+
+    const expirationDate = new Date(jwt_decode(this.getToken()).exp).getUTCDate();
+    return this.getToken() && expirationDate && expirationDate > new Date().getUTCDate();
   }
 
   public getUsername(): string {
@@ -71,6 +72,5 @@ export class AuthService extends BaseApiService {
 
   private setAuthCredentials(credentials: UserToken): void {
     localStorage.setItem('token', credentials.token);
-    localStorage.setItem('expiration', credentials.expiration);
   }
 }

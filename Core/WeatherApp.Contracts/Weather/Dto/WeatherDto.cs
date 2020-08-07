@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.Json.Serialization;
 
-namespace WeatherApp.Contracts.Weather
+namespace WeatherApp.Contracts.Weather.Dto
 {
     public class WeatherCoordDto
     {

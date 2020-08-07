@@ -9,6 +9,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using WeatherApp.Contracts.AppSettings;
+using WeatherApp.Contracts.Weather;
+using WeatherApp.Domain.Weather;
 using WeatherApp.Persistence.DbContext;
 using WeatherApp.Persistence.Entities;
 using WeatherApp.Services;
@@ -46,6 +48,8 @@ namespace WeatherApp
 
             //Registered services
             services.AddSingleton<IAppSettings>(provider => appSettings);
+            services.AddScoped<Contracts.Authentication.IAuthenticationService, Domain.Authentication.AuthenticationService>();
+            services.AddScoped<IWeatherService, WeatherService>();
 
             services.AddDbContext<WeatherAppDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("ConnectionString")));

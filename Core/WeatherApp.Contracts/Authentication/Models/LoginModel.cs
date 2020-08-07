@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace WeatherApp.Authentication.Models
+namespace WeatherApp.Contracts.Authentication.Models
 {
     public class LoginModel
     {

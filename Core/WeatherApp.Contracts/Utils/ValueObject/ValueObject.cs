@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace WeatherApp.Domain.Utils.ValueObject
+namespace WeatherApp.Contracts.Utils.ValueObject
 {
     public abstract class ValueObject
     {

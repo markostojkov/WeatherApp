@@ -141,3 +141,5 @@ C:\Users\marko\Desktop\WeatherApp\WeatherApp\WeatherApp\obj\Debug\netcoreapp3.1\
 C:\Users\marko\Desktop\WeatherApp\WeatherApp\WeatherApp\obj\Debug\netcoreapp3.1\WeatherApp.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\marko\Desktop\WeatherApp\WeatherApp\WeatherApp\bin\Debug\netcoreapp3.1\WeatherApp.Contracts.dll
 C:\Users\marko\Desktop\WeatherApp\WeatherApp\WeatherApp\bin\Debug\netcoreapp3.1\WeatherApp.Contracts.pdb
+C:\Users\marko\Desktop\WeatherApp\WeatherApp\WeatherApp\bin\Debug\netcoreapp3.1\WeatherApp.Domain.dll
+C:\Users\marko\Desktop\WeatherApp\WeatherApp\WeatherApp\bin\Debug\netcoreapp3.1\WeatherApp.Domain.pdb

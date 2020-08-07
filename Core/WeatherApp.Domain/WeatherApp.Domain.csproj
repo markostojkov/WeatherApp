@@ -4,4 +4,14 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WeatherApp.Contracts\WeatherApp.Contracts.csproj" />
+    <ProjectReference Include="..\WeatherApp.Persistence\WeatherApp.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>

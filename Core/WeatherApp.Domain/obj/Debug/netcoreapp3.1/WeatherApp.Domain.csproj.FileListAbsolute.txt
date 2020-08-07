@@ -7,3 +7,17 @@ C:\Users\marko\Desktop\WeatherApp\WeatherApp\WeatherApp.Domain\obj\Debug\netcore
 C:\Users\marko\Desktop\WeatherApp\WeatherApp\WeatherApp.Domain\obj\Debug\netcoreapp3.1\WeatherApp.Domain.AssemblyInfo.cs
 C:\Users\marko\Desktop\WeatherApp\WeatherApp\WeatherApp.Domain\obj\Debug\netcoreapp3.1\WeatherApp.Domain.dll
 C:\Users\marko\Desktop\WeatherApp\WeatherApp\WeatherApp.Domain\obj\Debug\netcoreapp3.1\WeatherApp.Domain.pdb
+C:\Users\marko\Desktop\WeatherApp\WeatherApp\Core\WeatherApp.Domain\bin\Debug\netcoreapp3.1\WeatherApp.Domain.deps.json
+C:\Users\marko\Desktop\WeatherApp\WeatherApp\Core\WeatherApp.Domain\bin\Debug\netcoreapp3.1\WeatherApp.Domain.dll
+C:\Users\marko\Desktop\WeatherApp\WeatherApp\Core\WeatherApp.Domain\bin\Debug\netcoreapp3.1\WeatherApp.Domain.pdb
+C:\Users\marko\Desktop\WeatherApp\WeatherApp\Core\WeatherApp.Domain\bin\Debug\netcoreapp3.1\WeatherApp.Contracts.dll
+C:\Users\marko\Desktop\WeatherApp\WeatherApp\Core\WeatherApp.Domain\bin\Debug\netcoreapp3.1\WeatherApp.Persistence.dll
+C:\Users\marko\Desktop\WeatherApp\WeatherApp\Core\WeatherApp.Domain\bin\Debug\netcoreapp3.1\WeatherApp.Contracts.pdb
+C:\Users\marko\Desktop\WeatherApp\WeatherApp\Core\WeatherApp.Domain\bin\Debug\netcoreapp3.1\WeatherApp.Persistence.pdb
+C:\Users\marko\Desktop\WeatherApp\WeatherApp\Core\WeatherApp.Domain\obj\Debug\netcoreapp3.1\WeatherApp.Domain.csprojAssemblyReference.cache
+C:\Users\marko\Desktop\WeatherApp\WeatherApp\Core\WeatherApp.Domain\obj\Debug\netcoreapp3.1\WeatherApp.Domain.AssemblyInfoInputs.cache
+C:\Users\marko\Desktop\WeatherApp\WeatherApp\Core\WeatherApp.Domain\obj\Debug\netcoreapp3.1\WeatherApp.Domain.AssemblyInfo.cs
+C:\Users\marko\Desktop\WeatherApp\WeatherApp\Core\WeatherApp.Domain\obj\Debug\netcoreapp3.1\WeatherApp.Domain.csproj.CopyComplete
+C:\Users\marko\Desktop\WeatherApp\WeatherApp\Core\WeatherApp.Domain\obj\Debug\netcoreapp3.1\WeatherApp.Domain.dll
+C:\Users\marko\Desktop\WeatherApp\WeatherApp\Core\WeatherApp.Domain\obj\Debug\netcoreapp3.1\WeatherApp.Domain.pdb
+C:\Users\marko\Desktop\WeatherApp\WeatherApp\Core\WeatherApp.Domain\obj\Debug\netcoreapp3.1\WeatherApp.Domain.csproj.CoreCompileInputs.cache

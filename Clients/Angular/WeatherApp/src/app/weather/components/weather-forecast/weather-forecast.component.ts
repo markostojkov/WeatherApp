@@ -21,6 +21,7 @@ export class WeatherForecastComponent implements OnInit {
 
   public search(): void {
     this.apiService.getWeatherForCity(this.city.value).subscribe((res: WeatherRootDto) => {
+      this.city.reset();
       this.cityData = res;
       this.weatherImageSrc = `http://openweathermap.org/img/w/${res.weather[0].icon}.png`;
     });

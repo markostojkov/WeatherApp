@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 
-namespace WeatherApp.Domain.Utils.Result
+namespace WeatherApp.Contracts.Utils.Result
 {
     public class Result : ResultCommonLogic
     {

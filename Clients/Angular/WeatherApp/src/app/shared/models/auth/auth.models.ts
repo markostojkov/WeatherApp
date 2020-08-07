@@ -22,5 +22,4 @@ export class LoginUser {
 
 export class UserToken {
     token: string;
-    expiration: string;
 }

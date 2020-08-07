@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace WeatherApp.Domain.Utils.Result
+namespace WeatherApp.Contracts.Utils.Result
 {
     public enum ResultType : short
     {
